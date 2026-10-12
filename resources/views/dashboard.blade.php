@@ -28,13 +28,11 @@
 
 <div>
     <div class="mb-2 text-sm font-medium text-neutral-400">Hari ini</div>
-    <div class="grid grid-cols-2 gap-3 lg:grid-cols-4">
+    <div class="grid grid-cols-2 gap-3 lg:grid-cols-5">
         <div class="card"><div class="stat-l">Total Sales</div><div class="stat">{{ Fmt::rp($t->sales) }}</div></div>
         <div class="card"><div class="stat-l">Cup Terjual</div><div class="stat">{{ Fmt::num($t->cup) }}</div></div>
-        <div class="card"><div class="stat-l">Cash / QRIS</div>
-            <div class="text-sm font-medium">{{ Fmt::rp($t->cash) }}</div>
-            <div class="text-sm font-medium text-neutral-400">{{ Fmt::rp($t->qris) }}</div>
-            <div class="hint">terisi saat sesi ditutup</div></div>
+        <div class="card"><div class="stat-l">Cash</div><div class="stat">{{ Fmt::rp($t->cash) }}</div></div>
+        <div class="card"><div class="stat-l">QRIS</div><div class="stat">{{ Fmt::rp($t->qris) }}</div></div>
         <div class="card"><div class="stat-l">Pengeluaran</div><div class="stat">{{ Fmt::rp($expToday) }}</div></div>
     </div>
 </div>
